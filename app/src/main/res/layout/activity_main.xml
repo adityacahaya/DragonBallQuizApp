@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wordpress.kadekadityablog.dragonballquizapp.MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dragonballzwalpaper"
+            android:gravity="center_vertical"
+            android:alpha=".10"
+            android:id="@+id/dragonwal"/>
+
+        <ImageView
+            android:layout_below="@+id/dragonwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dragonballzwalpaper"
+            android:gravity="center_vertical"
+            android:alpha=".10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Name"
+                style="@style/HeadingText"/>
+
+            <EditText
+                android:hint="Input your name here..."
+                android:id="@+id/ed_name"
+                style="@style/EditTextStyle"/>
+
+            <TextView
+                android:text="Email"
+                style="@style/HeadingText"/>
+
+            <EditText
+                android:hint="Input your email here..."
+                android:id="@+id/ed_email"
+                style="@style/EditTextStyle"/>
+
+            <TextView
+                android:text="Rule"
+                style="@style/HeadingText"/>
+
+            <TextView
+                style="@style/BodyText"
+                android:text="Choose and answer all of the question about Dragon Ball Z with correct answer. Your poin will be calculate after you click button SUBMIT"
+                />
+
+            <TextView
+                style="@style/HeadingText"
+                android:text="Question's"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="1."
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    />
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="Who is the name of Main Character of Dragon Ball Z ?"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_question1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Son Gohan"
+                    android:id="@+id/rb_question1_gohan"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Son Goku"
+                    android:id="@+id/rb_question1_goku"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Son Goten"
+                    android:id="@+id/rb_question1_goten"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="2."
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    />
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="Who are the Villain of Dragon Ball Z ?"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Frieza"
+                    android:layout_weight="1"
+                    android:id="@+id/cb_question2_frieze"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cell"
+                    android:layout_weight="1"
+                    android:id="@+id/cb_question2_cell"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Majin Bhu"
+                    android:layout_weight="1"
+                    android:id="@+id/cb_question2_bhu"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Omega Shenron"
+                    android:layout_weight="1"
+                    android:id="@+id/cb_question2_shenron"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="3."
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    />
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="Who is the name of this character ?"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/vegito"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:hint="Input your answer here..."
+                    android:id="@+id/ed_question3"
+                    style="@style/EditTextStyle"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="4."
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="0dp"
+                    />
+
+                <TextView
+                    style="@style/BodyText"
+                    android:text="Who is you favorite character in this series ?"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Input your answer here..."
+                    android:id="@+id/ed_question4"
+                    style="@style/EditTextStyle"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/HeadingText"
+                android:text="Score"/>
+
+            <TextView
+                style="@style/BodyText"
+                android:text="-"
+                android:id="@+id/txt_score"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUMBIT"
+                android:onClick="submitAnswer"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
